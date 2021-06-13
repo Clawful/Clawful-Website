@@ -8,6 +8,10 @@
 	--shadowText: #d6e1f3;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--bg);
 	color: white;
@@ -28,6 +32,7 @@ body {
 }
 
 .header-text {
+	margin-top: -10px;
 	color: var(--cwcolor);
 	font-family: 'Cedarville Cursive';
 	font-size: 60px;
@@ -63,6 +68,29 @@ body {
 	}
 	100% {
 		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		-webkit-transform: translatey(0px);
+		transform: translatey(0px);
+	}
+}
+
+.arrow {
+	max-height: 2.5vh;
+	width: auto;
+	justify-self: center;
+	margin: 10px auto;
+	animation: updown 7s linear infinite;
+}
+
+@keyframes updown {
+	0% {
+		-webkit-transform: translatey(0px);
+		transform: translatey(0px);
+	}
+	50% {
+		-webkit-transform: translatey(10px);
+		transform: translatey(10px);
+	}
+	100% {
 		-webkit-transform: translatey(0px);
 		transform: translatey(0px);
 	}
@@ -117,6 +145,7 @@ body {
 	text-align: center;
 	color: var(--second);
 	text-shadow: rgb(44, 44, 44) 1px 1px;
+	display: grid;
 }
 
 .category {
