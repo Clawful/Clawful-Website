@@ -140,6 +140,10 @@ body {
 	align-items: center;
 }
 
+.container {
+	width: 40vw;
+}
+
 .gif {
 	border-radius: 5px;
 	border: 1px solid var(--cwcolor);
