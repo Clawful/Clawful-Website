@@ -4,7 +4,8 @@
 :root {
 	--cwcolor: #f9bf9e;
 	--second: #eeff00;
-	--bg: #6a7483;
+	--bg: #677994;
+	--shadowText: #d6e1f3;
 }
 
 body {
@@ -12,6 +13,10 @@ body {
 	color: white;
 	align-items: center;
 	align-content: center;
+}
+
+.top {
+	min-height: 100vh;
 }
 
 .header {
@@ -39,7 +44,7 @@ body {
 	border-radius: 50%;
 	max-width: 20%;
 	height: auto;
-	animation: wiggle 7s ease-in infinite;
+	animation: wiggle 7s ease-in-out infinite;
 }
 
 @keyframes wiggle {
@@ -110,7 +115,39 @@ body {
 .description {
 	font-family: 'Comfortaa';
 	text-align: center;
-	font-weight: 400;
 	color: var(--second);
 	text-shadow: rgb(44, 44, 44) 1px 1px;
+}
+
+.category {
+	display: flex;
+}
+
+.title {
+	color: var(--second);
+	font-family: 'Comfortaa';
+	text-shadow: rgb(44, 44, 44) 1px 1px;
+}
+
+.text {
+	font-family: 'Comfortaa';
+	color: var(--shadowText);
+	text-shadow: rgb(44, 44, 44) 1px 1px;
+}
+
+.category {
+	justify-content: space-around;
+	align-items: center;
+}
+
+.gif {
+	border-radius: 5px;
+	border: 1px solid var(--cwcolor);
+	max-height: 70vh;
+	width: auto;
+}
+
+.bar {
+	color: rgba(255, 255, 255, 0.247);
+	margin: 20px auto;
 }
